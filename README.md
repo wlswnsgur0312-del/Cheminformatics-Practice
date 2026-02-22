@@ -24,7 +24,18 @@ As a **Pharmacy undergraduate**, I am exploring how to apply **Python** and **Ar
     2.  Train the model to classify drugs as *Soluble* or *Insoluble*.
     3.  Predict properties of new compounds (e.g., Cholesterol).
 * **Key Tech:** `Scikit-Learn`, `Pandas`, `RDKit Descriptors`
-* 🔗 **[View Code](./solubility_QSAR.py)** 
+* 🔗 **[View Code](./solubility_QSAR.py)**
+
+* ### 3. [Big Data] EGFR Inhibitor Bioactivity Classifier (QSAR) 🦠
+> **Goal:** Predict bioactivity of compounds against **EGFR (Lung Cancer Target)** using large-scale experimental data.
+* **Description:** Automated data mining from the **ChEMBL Database** (57k+ entries) to build a classification model for **Non-Small Cell Lung Cancer (NSCLC)** drug discovery.
+* **Methodology:**
+    1.  **Data Mining:** Extracted real-world bioactivity data for **EGFR** (CHEMBL203).
+    2.  **Preprocessing:** Cleaned data and defined 'Active' compounds (**IC50 ≤ 1000nM**).
+    3.  **Modeling:** Trained **Random Forest** on physicochemical descriptors.
+* **Result:** Achieved **84.32% Accuracy**, proving the feasibility of in-silico screening for kinase inhibitors.
+* **Key Tech:** `ChEMBL Database`, `Pandas`, `Scikit-Learn`, `RDKit`
+* 🔗 **[View Code](./EGFR_Prediction/chembl_ai.py)**
 ---
 
 ## 🛠️ Tech Stack & Tools
