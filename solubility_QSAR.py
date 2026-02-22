@@ -1,3 +1,36 @@
+# 💊 AI-Based Drug Solubility Predictor (QSAR Basics)
+
+### 📘 Project Overview
+This project implements a **QSAR (Quantitative Structure-Activity Relationship)** model using **Machine Learning (Random Forest)** to predict the aqueous solubility of drug-like molecules.
+By analyzing physicochemical properties (Descriptors) extracted from chemical structures, the AI determines whether a drug is likely to be **Soluble** or **Insoluble**.
+
+(머신러닝 알고리즘인 랜덤 포레스트를 활용해 약물의 수용성 여부를 예측하는 QSAR 모델입니다. 분자 구조에서 추출한 물리화학적 특성을 학습하여 용해도를 판별합니다.)
+
+### 🚀 Key Features
+* **Descriptor Calculation:** Automatically extracts key physicochemical features using **RDKit**:
+    * **LogP (Partition Coefficient):** The most critical factor for lipophilicity/solubility.
+    * **MolWt (Molecular Weight):** Size of the molecule.
+    * **TPSA (Topological Polar Surface Area):** Correlation with hydrogen bonding and polarity.
+    * **Rotatable Bonds:** Measure of molecular flexibility.
+* **AI Modeling:** Uses **Scikit-Learn's RandomForestClassifier** to train on known drug data.
+* **Prediction:** Predicts the solubility of unseen molecules (e.g., Cholesterol).
+
+### 🧪 Methodology (Pipeline)
+1.  **Input:** SMILES Strings (e.g., Aspirin, Vitamin C).
+2.  **Featurization:** Convert SMILES to numerical vectors (MW, LogP, TPSA, etc.).
+3.  **Training:** Train the Random Forest model with labeled data (Soluble vs. Insoluble).
+4.  **Inference:** Predict the solubility probability of a new compound.
+
+### 💻 Code Example & Result
+The model successfully predicts that **Cholesterol** (a highly lipophilic molecule) is insoluble.
+
+# Test Case: Cholesterol
+mystery_drug_smiles = "CC(C)CCCC(C)C1CCC2C3CC=C4CC(O)CCC4(C)C3CCC12C" 
+
+# Result
+# >> AI 예측: '이 약은 물에 잘 안 녹습니다.' (확률: 80.0%)
+# >> Prediction: Insoluble (Probability: 80.0%)
+
 ```python
 
 import pandas as pd
