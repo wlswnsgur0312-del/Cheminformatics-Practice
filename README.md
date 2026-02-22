@@ -35,7 +35,7 @@ As a **Pharmacy undergraduate**, I am exploring how to apply **Python** and **Ar
     3.  **Modeling:** Trained **Random Forest** on physicochemical descriptors.
 * **Result:** Achieved **84.32% Accuracy**, proving the feasibility of in-silico screening for kinase inhibitors.
 * **Key Tech:** `ChEMBL Database`, `Pandas`, `Scikit-Learn`, `RDKit`
-* 🔗 **[View Code](./EGFR_Prediction/chembl_ai.py)**
+* 🔗 **[View Code](./EGFR_prediction_chembl_ai.py)**
 ---
 
 ## 🛠️ Tech Stack & Tools
