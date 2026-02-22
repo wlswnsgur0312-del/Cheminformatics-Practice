@@ -39,72 +39,12 @@ def save_3d_structure(mol_name, smiles_string):
 
 # ==========================================
 # ✅ Usage Example: Works for ANY molecule!
-# ==========================================[tetrodotoxin.pdb](https://github.com/user-attachments/files/25467191/tetrodotoxin.pdb)
-HETATM    1  C1  UNL     1       2.761   0.938  -0.564  1.00  0.00           C  
-HETATM    2  C2  UNL     1       2.040   0.099   0.498  1.00  0.00           C  
-HETATM    3  C3  UNL     1       0.779   0.721   1.145  1.00  0.00           C  
-HETATM    4  C4  UNL     1      -0.490   0.773   0.275  1.00  0.00           C  
-HETATM    5  C5  UNL     1      -0.537   1.790  -0.859  1.00  0.00           C  
-HETATM    6  N1  UNL     1      -1.809   1.726  -1.575  1.00  0.00           N  
-HETATM    7  C6  UNL     1      -2.375   0.579  -1.649  1.00  0.00           C  
-HETATM    8  N2  UNL     1      -1.929  -0.597  -1.150  1.00  0.00           N  
-HETATM    9  C7  UNL     1      -0.795  -0.648  -0.228  1.00  0.00           C  
-HETATM   10  C8  UNL     1       0.429  -1.295  -0.945  1.00  0.00           C  
-HETATM   11  C9  UNL     1       1.630  -1.309   0.023  1.00  0.00           C  
-HETATM   12  O1  UNL     1       1.265  -2.073   1.193  1.00  0.00           O  
-HETATM   13  C10 UNL     1       0.168  -1.492   1.891  1.00  0.00           C  
-HETATM   14  C11 UNL     1      -1.097  -1.545   0.993  1.00  0.00           C  
-HETATM   15  O2  UNL     1      -2.275  -1.136   1.711  1.00  0.00           O  
-HETATM   16  O3  UNL     1       0.442  -0.143   2.278  1.00  0.00           O  
-HETATM   17  O4  UNL     1      -0.051  -2.236   3.073  1.00  0.00           O  
-HETATM   18  O5  UNL     1       0.750  -0.640  -2.163  1.00  0.00           O  
-HETATM   19  N3  UNL     1      -3.538   0.436  -2.317  1.00  0.00           N  
-HETATM   20  O6  UNL     1      -0.336   3.070  -0.285  1.00  0.00           O  
-HETATM   21  O7  UNL     1       3.035  -0.051   1.555  1.00  0.00           O  
-HETATM   22  O8  UNL     1       3.190   2.173   0.011  1.00  0.00           O  
-HETATM   23  H1  UNL     1       2.176   1.168  -1.448  1.00  0.00           H  
-HETATM   24  H2  UNL     1       3.666   0.420  -0.902  1.00  0.00           H  
-HETATM   25  H3  UNL     1       1.006   1.700   1.579  1.00  0.00           H  
-HETATM   26  H4  UNL     1      -1.300   1.077   0.956  1.00  0.00           H  
-HETATM   27  H5  UNL     1       0.253   1.661  -1.593  1.00  0.00           H  
-HETATM   28  H6  UNL     1      -2.622  -1.330  -1.043  1.00  0.00           H  
-HETATM   29  H7  UNL     1       0.178  -2.332  -1.207  1.00  0.00           H  
-HETATM   30  H8  UNL     1       2.489  -1.812  -0.435  1.00  0.00           H  
-HETATM   31  H9  UNL     1      -1.287  -2.577   0.672  1.00  0.00           H  
-HETATM   32  H10 UNL     1      -2.029  -0.383   2.287  1.00  0.00           H  
-HETATM   33  H11 UNL     1      -0.998  -2.451   3.105  1.00  0.00           H  
-HETATM   34  H12 UNL     1      -0.086  -0.567  -2.671  1.00  0.00           H  
-HETATM   35  H13 UNL     1      -3.892   1.347  -2.601  1.00  0.00           H  
-HETATM   36  H14 UNL     1      -4.256  -0.068  -1.814  1.00  0.00           H  
-HETATM   37  H15 UNL     1      -0.807   3.663  -0.897  1.00  0.00           H  
-HETATM   38  H16 UNL     1       2.607  -0.575   2.264  1.00  0.00           H  
-HETATM   39  H17 UNL     1       3.647   1.921   0.839  1.00  0.00           H  
-CONECT    1    2   22   23   24
-CONECT    2    3   11   21
-CONECT    3    4   16   25
-CONECT    4    5    9   26
-CONECT    5    6   20   27
-CONECT    6    7    7
-CONECT    7    8   19
-CONECT    8    9   28
-CONECT    9   10   14
-CONECT   10   11   18   29
-CONECT   11   12   30
-CONECT   12   13
-CONECT   13   14   16   17
-CONECT   14   15   31
-CONECT   15   32
-CONECT   17   33
-CONECT   18   34
-CONECT   19   35   36
-CONECT   20   37
-CONECT   21   38
-CONECT   22   39
-END
-
 
 # Example 1: Aspirin
 save_3d_structure("aspirin", "CC(=O)OC1=CC=CC=C1C(=O)O")
 
 # Example 2: Tetrodotoxin (Complex Structure)
 save_3d_structure("tetrodotoxin", "C(C1(C2C3C(N=C(NC34C(C1OC(C4O)(O2)O)O)N)O)O)O")
+
+
+
