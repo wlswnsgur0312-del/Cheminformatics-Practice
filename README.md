@@ -46,5 +46,6 @@ save_3d_structure("aspirin", "CC(=O)OC1=CC=CC=C1C(=O)O")
 # Example 2: Tetrodotoxin (Complex Structure)
 save_3d_structure("tetrodotoxin", "C(C1(C2C3C(N=C(NC34C(C1OC(C4O)(O2)O)O)N)O)O)O")
 
+<img width="896" height="919" alt="image" src="https://github.com/user-attachments/assets/13dbfdf2-7ef5-4ed7-ad08-97ac9e125bff" />
 
 
