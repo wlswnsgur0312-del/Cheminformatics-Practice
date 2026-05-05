@@ -1,9 +1,4 @@
-# 🧪 Cheminformatics & CADD Practice Repository
 
-### 🧑‍🔬 Introduction
-This repository contains my personal projects and study records related to **Cheminformatics** and **Computer-Aided Drug Design (CADD)**.
-As a **Pharmacy undergraduate**, I am exploring how to apply **Python** and **Artificial Intelligence** to pharmaceutical sciences, focusing on molecular modeling and property prediction.
-(약학 전공자로서 파이썬과 AI를 활용해 신약 개발(CADD) 및 분자 모델링을 연구한 프로젝트 모음입니다.)
 
 ---
 
